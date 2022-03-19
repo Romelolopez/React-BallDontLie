@@ -1,0 +1,96 @@
+table{
+    border-collapse: collapse;
+    width: 15em;
+    font-family:'EB Garamond';
+}
+
+.team-table{
+    border-collapse: collapse;
+    width: 35em;
+    font-family:'EB Garamond';
+    text-align: center;
+}
+
+
+input{
+    text-transform: capitalize;
+    font-size: 1.2em;
+    background-color: #ece0c7;
+    border-bottom: 2px solid #8D2525;
+    font-family:'EB Garamond';
+    color:black;
+    outline: none;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+input:focus{
+    outline: none;
+}
+
+.team-table-body:nth-child(even){
+    background-color: rgb(201, 201, 201);
+} 
+
+.player-table-tr:nth-child(odd){
+    background-color: rgb(201, 201, 201);
+}
+
+.buttons-container{
+    display: flex;
+    flex-direction: row;
+    width: 8em;
+    justify-content: space-between;
+    margin-top: 1em;
+    
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+label{
+    font-family:'EB Garamond';
+}
+
+.year-label{
+    margin-top: 1em;
+}
+
+.button-stats{
+    margin-top: 1em;
+    font-family:'EB Garamond';
+    color: #8D2525;
+    border: 2px solid #8D2525;
+    border-radius: 30px;
+    width: 4em;
+    text-align: center;
+}
+
+.button-stats:hover{
+    
+    color: #131177;
+    border: 2px solid #131177;
+    
+}
+
+@media only screen and (max-width: 500px) {
+    .team-table{
+        table-layout: fixed;
+        width: 100%;
+    }
+    .team-table-th{
+        font-size: .55em
+    }
+
+    .team-table-td{
+        width: 60em;
+        text-align: left;
+    }
+    
+}

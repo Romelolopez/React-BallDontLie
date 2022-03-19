@@ -1,0 +1,88 @@
+.navbar{
+    height: 3em;
+    width: 100%;
+    background: #ece0c7;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    position: fixed;
+    top: 0;  
+}
+
+.nav-logo{
+    text-decoration: none;
+    margin-left: 1em;
+    font-family:'EB Garamond';
+    color: #8D2525;
+    text-shadow: 1px 0.6px 0px #131177;
+    font-size: 1.2em;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    width: 50%;
+    justify-content: space-between;
+    margin-right: 1em;
+
+}
+
+.nav-link{
+    text-decoration: none;
+    color: rgb(141, 37, 37);
+    transition: 0.3s all;
+}
+
+.nav-link:hover{
+
+    color: #131177;
+
+}
+
+.nav-icon{
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+
+}
+
+@media only screen and (max-width: 500px) {
+    .navbar{
+        margin: 0;
+        padding: 0;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+    }
+
+    .nav-links{
+        display: none;
+        
+    }
+
+    .nav-links.active{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        text-align: center;
+        top: 2em;
+        background:#ece0c7;
+        width: 100%;
+        padding-left: 0;
+        z-index: 2;
+        border-bottom:1px solid #8D2525;
+        transition: all .5s ease-in-out;
+        
+    }
+
+    .nav-item{
+        padding: 1em;
+        
+    }
+    .nav-icon{
+        display: flex;
+        margin-right: 0.3em;
+    }
+}
